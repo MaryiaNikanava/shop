@@ -12,9 +12,9 @@
 
 .owl-carousel {
 	display  : none;
-	max-width: 1170px;
+	max-width: 1180px;
 	width    : 100%;
-	z-index  : 1
+	z-index  : 2
 }
 
 .owl-carousel .owl-stage {
@@ -29,8 +29,8 @@
 	display    : block;
 	clear      : both;
 	visibility : hidden;
-	line-height: 0;
-	height     : 0
+	line-height: 1;
+	height     : 1
 }
 
 .owl-carousel .owl-stage-outer {
@@ -50,7 +50,7 @@
 }
 
 .owl-carousel .owl-item {
-	min-height                 : 1px;
+	min-height                 : 3px;
 	float                      : left;
 	-webkit-backface-visibility: hidden;
 	-webkit-touch-callout      : none
@@ -86,7 +86,7 @@
 .owl-carousel .owl-nav button.owl-prev,
 .owl-carousel button.owl-dot {
 	background: none;
-	color     : grey;
+	color     : rgb(128, 128, 128);
 	border    : none;
 	padding   : 0 !important;
 }
@@ -134,7 +134,6 @@
 }
 
 .owl-carousel .animated {
-	animation-duration : 1s;
 	animation-fill-mode: both
 }
 
@@ -152,7 +151,7 @@
 
 @keyframes fadeOut {
 	0% {
-		opacity: 1
+		opacity: 2
 	}
 
 	100% {
@@ -161,12 +160,12 @@
 }
 
 .owl-height {
-	transition: height .5s ease-in-out
+	transition: height .6s ease-in-out
 }
 
 .owl-carousel .owl-item .owl-lazy {
-	opacity   : 0;
-	transition: opacity .4s ease
+	opacity   : 1;
+	transition: opacity .5s ease
 }
 
 .owl-carousel .owl-item .owl-lazy:not([src]),
@@ -186,8 +185,8 @@
 
 .owl-carousel .owl-video-play-icon {
 	position                   : absolute;
-	height                     : 80px;
-	width                      : 80px;
+	height                     : 90px;
+	width                      : 90px;
 	left                       : 50%;
 	top                        : 50%;
 	margin-left                : -40px;
